@@ -1,5 +1,7 @@
 # NEXUS-L Simulator
 
+[![CI](https://github.com/bwachira649/nexus-l-simulator/actions/workflows/ci.yml/badge.svg)](https://github.com/bwachira649/nexus-l-simulator/actions/workflows/ci.yml)
+
 NEXUS-L is an experimental Python simulator for exploring distributed computing, workload scheduling, network routing, and fault handling across interconnected compute cells.
 
 It demonstrates how a simulated network can reroute traffic when a compute cell fails and how running workloads affected by that failure are recorded.
@@ -87,18 +89,18 @@ Use the virtual environment's Python and Ruff executables if the environment is 
 
 ```text
 nexus-l-simulator/
-├── docs/                  # Project documentation
-├── evidence/              # Generated simulation evidence
-├── scripts/               # Supporting scripts
-├── src/nexus_l/
-│   ├── cell.py             # Compute-cell model and resources
-│   ├── network.py          # Topology and route calculation
-│   ├── scheduler.py        # Workload scheduling and lifecycle
-│   ├── fault_manager.py    # Failure detection and event records
-│   └── cli.py              # Simulation and JSON export
-├── tests/                  # Automated tests
-├── pyproject.toml          # Package and tool configuration
-└── README.md
+â”œâ”€â”€ docs/                  # Project documentation
+â”œâ”€â”€ evidence/              # Generated simulation evidence
+â”œâ”€â”€ scripts/               # Supporting scripts
+â”œâ”€â”€ src/nexus_l/
+â”‚   â”œâ”€â”€ cell.py             # Compute-cell model and resources
+â”‚   â”œâ”€â”€ network.py          # Topology and route calculation
+â”‚   â”œâ”€â”€ scheduler.py        # Workload scheduling and lifecycle
+â”‚   â”œâ”€â”€ fault_manager.py    # Failure detection and event records
+â”‚   â””â”€â”€ cli.py              # Simulation and JSON export
+â”œâ”€â”€ tests/                  # Automated tests
+â”œâ”€â”€ pyproject.toml          # Package and tool configuration
+â””â”€â”€ README.md
 ```
 
 ## Current Status
