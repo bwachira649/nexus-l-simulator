@@ -1,0 +1,50 @@
+{
+  "simulation": "NEXUS-L",
+  "version": "0.1.0",
+  "initial_route": [
+    "cell-A",
+    "cell-B",
+    "cell-D"
+  ],
+  "initial_latency_ms": 4.0,
+  "failed_cell": "cell-B",
+  "failure_detection": {
+    "new_events": 1,
+    "events": [
+      {
+        "cell_id": "cell-B",
+        "timestamp": "2026-10-19T12:39:14.368177+00:00",
+        "affected_workloads": [
+          "demo-job-001"
+        ]
+      }
+    ]
+  },
+  "recovered_route": [
+    "cell-A",
+    "cell-C",
+    "cell-D"
+  ],
+  "recovered_latency_ms": 9.0,
+  "workloads": [
+    {
+      "id": "demo-job-001",
+      "status": "failed",
+      "assigned_cell": "cell-B"
+    }
+  ],
+  "network": {
+    "cells": 4,
+    "links": 4,
+    "online": 3,
+    "offline": 1,
+    "degraded": 0
+  },
+  "scheduler": {
+    "pending": 0,
+    "running": 0,
+    "completed": 0,
+    "rejected": 0,
+    "failed": 1
+  }
+}
